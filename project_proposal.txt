@@ -1,0 +1,25 @@
+Determining Best Locations for Start-Up
+Sheralee Lovejoy
+
+Abstract: 
+The purpose of this project was to analyze MTA turnstile data to determine possible locations for HoleLox Bagels’ new shop location in New York City. The goal was to filter and model data to identify any trends and high traffic locations.
+
+Design:
+This project is designed to help the start-up determine high foot traffic areas in New York City based on MTA turnstile data. To best visualize the data, bar charts were created to compare station volume and averages over two years.
+
+Data:
+The dataset contains 2 years worth of turnstile data starting in 2019 and ending in 2020. This data consisted of over 8,000,000 rows and 12 columns of features. 7 out of the 12 features were categorical. Key features used for analysis include, but are not limited to the following: Station, Date, Time, and Entries. Station was used to group turnstile data. Date and time were used to filter data based on hours of operation of the start-up and isolate data based on years. Entries was used for calculating foot traffic for each station.
+
+Algorithms:
+Pandas
+Grouping to remove duplicates and identify a turnstile
+Masking to isolate data from a particular year and hour of day
+Create a new column consisting of daily entry differences as well as a column of the years so I could preform further filtration
+
+Models
+Using Matplotlib I created bar graphs to display the top 10 stations based on total entries over the course of two years (2019-2020). To gain further insight, I created a second graph to display the average daily entries of these top 10 stations. A final graph consisting of the daily average entries for each year was made in hopes to identify any trends between the two years.  Using another year other that 2020 would have been more beneficial due to COVIDs effects. However, it’s important to note that the station on Canal St was not as severely effected by the pandemic as other locations.
+
+Tools:
+Used SQL to pull raw data and SQLAlchemy to transfer the csv to Python
+Pandas to clean and filter data
+Matplotlib to create visuals/charts
